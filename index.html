@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Usługi geodezyjne – pomiary, mapy do celów projektowych, podziały nieruchomości i obsługa inwestycji." />
-  <title>GeoPomiar – Usługi geodezyjne</title>
+  <meta name="description" content="Opracowania geodezyjne i kartograficzne – prace kameralne, cyfrowe mapy, aktualizacja baz danych i dokumentacja geodezyjna." />
+  <title>GeoPomiar – Opracowania geodezyjne i kartograficzne</title>
 
   <style>
     :root {
@@ -256,6 +256,32 @@
       font-size: 0.95rem;
     }
 
+
+    .programs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .program {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      min-height: 150px;
+    }
+
+    .program strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .program span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
     .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -345,6 +371,7 @@
       }
 
       .services { grid-template-columns: 1fr 1fr; }
+      .programs { grid-template-columns: 1fr 1fr; }
       .hero { padding-top: 58px; }
       .hero-card { min-height: 280px; }
     }
@@ -353,6 +380,7 @@
       .container { width: min(100% - 28px, 1120px); }
       .nav-links a:not(.btn) { display: none; }
       .services { grid-template-columns: 1fr; }
+      .programs { grid-template-columns: 1fr; }
       section { padding: 54px 0; }
       .contact-box { padding: 28px 24px; }
     }
@@ -366,6 +394,7 @@
         <a class="brand" href="#">Geo<span>Pomiar</span></a>
         <div class="nav-links">
           <a href="#uslugi">Usługi</a>
+          <a href="#programy">Programy</a>
           <a href="#o-nas">O nas</a>
           <a href="#kontakt">Kontakt</a>
           <a class="btn btn-primary" href="tel:+48123456789">Zadzwoń</a>
@@ -378,12 +407,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">Usługi geodezyjne</span>
-          <h1>Precyzyjne pomiary. Jasne zasady.</h1>
+          <span class="eyebrow">Prace kameralne i kartograficzne</span>
+          <h1>Mapy, dane i dokumentacja geodezyjna.</h1>
           <p>
-            Kompleksowa obsługa geodezyjna dla klientów indywidualnych,
-            firm i inwestorów. Pomiary, mapy, podziały nieruchomości
-            oraz obsługa inwestycji.
+            Komputerowe opracowanie materiałów geodezyjnych i kartograficznych.
+            Tworzenie oraz aktualizacja map, praca na bazach danych przestrzennych,
+            przygotowanie dokumentacji i cyfrowych opracowań dla firm oraz geodetów.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#kontakt">Zapytaj o wycenę</a>
@@ -394,9 +423,9 @@
         <div class="hero-card" aria-label="Informacja o usługach">
           <div class="icon">⌖</div>
           <div>
-            <h2>Geodezja od A do Z</h2>
+            <h2>Geodezja przy komputerze</h2>
             <p>
-              Rzetelnie, terminowo i z prostym kontaktem na każdym etapie zlecenia.
+              Dokładne opracowania cyfrowe, uporządkowane dane i czytelna dokumentacja.
             </p>
           </div>
         </div>
@@ -415,39 +444,71 @@
         <div class="services">
           <article class="service">
             <div class="number">01</div>
-            <h3>Mapy do celów projektowych</h3>
-            <p>Przygotowanie aktualnych opracowań mapowych dla projektantów i inwestorów.</p>
+            <h3>Opracowanie map cyfrowych</h3>
+            <p>Tworzenie i aktualizacja map na podstawie przekazanych danych, szkiców i materiałów źródłowych.</p>
           </article>
 
           <article class="service">
             <div class="number">02</div>
-            <h3>Wytyczenia budynków</h3>
-            <p>Precyzyjne wyznaczenie położenia obiektów zgodnie z dokumentacją projektową.</p>
+            <h3>Aktualizacja baz danych</h3>
+            <p>Wprowadzanie i porządkowanie danych przestrzennych oraz atrybutowych w bazach geodezyjnych.</p>
           </article>
 
           <article class="service">
             <div class="number">03</div>
-            <h3>Inwentaryzacje powykonawcze</h3>
-            <p>Pomiary wykonanych budynków, przyłączy i sieci na potrzeby zakończenia inwestycji.</p>
+            <h3>Digitalizacja materiałów</h3>
+            <p>Przenoszenie map, szkiców i dokumentacji analogowej do postaci cyfrowej.</p>
           </article>
 
           <article class="service">
             <div class="number">04</div>
-            <h3>Podziały nieruchomości</h3>
-            <p>Obsługa geodezyjna podziałów działek i przygotowanie niezbędnej dokumentacji.</p>
+            <h3>Opracowania kartograficzne</h3>
+            <p>Przygotowanie czytelnych map, warstw tematycznych, wydruków i materiałów do dalszego wykorzystania.</p>
           </article>
 
           <article class="service">
             <div class="number">05</div>
-            <h3>Wznowienia granic</h3>
-            <p>Ustalenie i odtworzenie przebiegu granic działek w terenie.</p>
+            <h3>Przygotowanie dokumentacji</h3>
+            <p>Kompletowanie i opracowywanie dokumentacji technicznej na podstawie dostarczonych materiałów.</p>
           </article>
 
           <article class="service">
             <div class="number">06</div>
-            <h3>Obsługa inwestycji</h3>
-            <p>Bieżąca obsługa geodezyjna budów oraz inwestycji prywatnych i komercyjnych.</p>
+            <h3>Konwersja i porządkowanie danych</h3>
+            <p>Praca z różnymi formatami plików, warstwami, współrzędnymi i danymi potrzebnymi do dalszych opracowań.</p>
           </article>
+        </div></div>
+      </div>
+    </section>
+
+
+    <section id="programy">
+      <div class="container">
+        <div class="section-head">
+          <h2>Programy, w których pracujemy</h2>
+          <p>
+            Oprogramowanie wykorzystywane do opracowywania map, danych przestrzennych
+            i dokumentacji. Listę można łatwo dopasować do faktycznie używanych programów.
+          </p>
+        </div>
+
+        <div class="programs">
+          <div class="program">
+            <strong>QGIS</strong>
+            <span>Praca z danymi przestrzennymi, warstwami mapowymi i analizami GIS.</span>
+          </div>
+          <div class="program">
+            <strong>AutoCAD</strong>
+            <span>Opracowania techniczne, rysunki, wektoryzacja i praca na plikach CAD.</span>
+          </div>
+          <div class="program">
+            <strong>C-GEO</strong>
+            <span>Opracowania geodezyjne, mapy, współrzędne oraz dokumentacja techniczna.</span>
+          </div>
+          <div class="program">
+            <strong>EWMAPA</strong>
+            <span>Obsługa map numerycznych i danych wykorzystywanych w geodezji.</span>
+          </div>
         </div>
       </div>
     </section>
@@ -455,13 +516,13 @@
     <section id="o-nas">
       <div class="container about">
         <div class="about-card">
-          <h3>Doświadczenie i dokładność</h3>
+          <h3>Dokładne opracowania bez pracy terenowej</h3>
           <p>
-            W geodezji liczy się precyzja, terminowość i dobra komunikacja.
-            Dlatego każde zlecenie prowadzimy od pierwszego kontaktu aż do przekazania dokumentacji.
+            Specjalizujemy się w pracach kameralnych: opracowaniu materiałów,
+            map i danych geodezyjnych w środowisku cyfrowym.
           </p>
           <p>
-            Obsługujemy zarówno osoby prywatne budujące dom, jak i firmy realizujące większe inwestycje.
+            Możemy realizować całe opracowania lub wspierać geodetów i firmy w części biurowej zlecenia.
           </p>
         </div>
 
@@ -471,7 +532,7 @@
             <div class="tick"><strong>✓</strong><span>Przejrzysta wycena przed rozpoczęciem prac</span></div>
             <div class="tick"><strong>✓</strong><span>Terminowa realizacja zleceń</span></div>
             <div class="tick"><strong>✓</strong><span>Kontakt telefoniczny i mailowy</span></div>
-            <div class="tick"><strong>✓</strong><span>Obsługa klientów indywidualnych i firm</span></div>
+            <div class="tick"><strong>✓</strong><span>Praca na przekazanych mapach, plikach i danych</span></div>
           </div>
         </div>
       </div>
@@ -481,8 +542,8 @@
       <div class="container">
         <div class="contact-box">
           <div>
-            <h2>Potrzebujesz geodety?</h2>
-            <p>Napisz lub zadzwoń. Przygotujemy wycenę i ustalimy termin realizacji.</p>
+            <h2>Potrzebujesz opracować mapę lub dane?</h2>
+            <p>Napisz lub zadzwoń. Opisz, jakie materiały posiadasz i jakiego opracowania potrzebujesz.</p>
 
             <div class="contact-details">
               <a href="tel:+48123456789">tel. +48 123 456 789</a>
@@ -491,7 +552,7 @@
             </div>
           </div>
 
-          <a class="btn btn-primary" href="mailto:kontakt@geopomiar.pl?subject=Zapytanie%20o%20usługi%20geodezyjne">
+          <a class="btn btn-primary" href="mailto:kontakt@geopomiar.pl?subject=Zapytanie%20o%20opracowanie%20geodezyjne">
             Napisz wiadomość
           </a>
         </div>
